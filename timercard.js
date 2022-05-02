@@ -83,6 +83,7 @@ function icon_now(num){
   }
 }
 
+
 function icon_color(){
   return "#DC143C";
 }
