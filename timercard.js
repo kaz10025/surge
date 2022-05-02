@@ -83,10 +83,14 @@ function icon_now(num){
   }
 }
 
+function icon_color(){
+  return "#DC143C";
+}
+
 $done({
 title:title_random(tnumcount(Number(nowlist))),
 icon:icon_now(tnumcount(Number(nowlist))),
-icon-color: '#DC143C',
+icon-color:icon_color(),
 content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+","+tlist[Number(nowlist) + Number(1)][0] +":"+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+":"+tnumcount(Number(nowlist) + Number(2))+"天"
 })
 
